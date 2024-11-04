@@ -40,14 +40,14 @@ public class FoodOrder extends JFrame {
                 }
                 if(rbNone.isSelected()){
                     String formattedNa = String.format("%.2f", total);
-                    JOptionPane.showMessageDialog(null,"The total price is " + formattedNa);
+                    JOptionPane.showMessageDialog(null,"The total price is Php" + formattedNa);
                 }else{
                     for(int i=1; i<4;i++){
                         if(discounts[i].isSelected()){
                             double d = total * value[i];
                             total -= d;
                             String x = String.format("%.2f", total);
-                            JOptionPane.showMessageDialog(null,"The total price is " + x);
+                            JOptionPane.showMessageDialog(null,"The total price is Php" + x);
                             break;
                         }
                     }
