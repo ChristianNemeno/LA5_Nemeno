@@ -29,6 +29,8 @@ public class SimpleCalculator extends JFrame{
 
                 char op = ((String)cbOperations.getSelectedItem()).charAt(0);
                 int result;
+
+                try{
                 switch (op){
                     case '+':
                         result = num1 + num2;
@@ -45,16 +47,17 @@ public class SimpleCalculator extends JFrame{
                         answer.setText(String.valueOf(result));
                         break;
                     case '/':
-                        if(num2 == 0){
-                            JOptionPane.showMessageDialog(null,"Not divisible by zero");
-                            break;
-                        }
+
                         result = num1 / num2;
 
 
                         answer.setText(String.valueOf(result));
                         break;
 
+                }
+
+                }catch(ArithmeticException exception){
+                    JOptionPane.showMessageDialog(null,exception.getMessage());
                 }
             }
         });

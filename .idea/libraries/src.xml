@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LA5_Nemeno/src/SimpleCalculator.zip!/" />
+      <root url="jar://$PROJECT_DIR$/LA5_Nemeno/src/LeapYearChecker.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
